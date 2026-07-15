@@ -1,0 +1,36 @@
+---
+// Import the necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import ContactSection from '@components/sections/misc/ContactSection.astro';
+import { SITE } from '@data/constants';
+
+const pageTitle: string = `Contact | ${SITE.title}`;
+const metaDescription =
+  'Ready to book your wedding, event, or pre-wedding shoot? Chat with Zion Photography directly on WhatsApp.';
+const ogTitle = 'Contact Us | Zion Photography';
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    '@context': '#!',
+    '@type': '#!',
+    '@id': '#!',
+    url: '#!',
+    name: '#!',
+    description:
+      'Ready to book your wedding, event, or pre-wedding shoot? Chat with Zion Photography directly on WhatsApp.',
+    isPartOf: {
+      '@type': '#!',
+      url: '#!',
+      name: '#!',
+      description:
+        'Zion Photography is a Christ-centric wedding and event photography & videography studio.',
+    },
+    inLanguage: 'en-US',
+  }}
+>
+  <ContactSection />
+</MainLayout>
