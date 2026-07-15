@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-1. Clone Repository
+1. Clone Repository done
 ```
 git clone #!.git
 ```
